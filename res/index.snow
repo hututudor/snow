@@ -1,0 +1,11 @@
+textures = {
+  splash = 'img/splash.png'
+}
+
+scenes = {
+  game = 'scenes/game.snow'
+}
+
+objects = {
+  player = 'objects/player.snow'
+}

@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = C:\Users\Tudor\projects\snow\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles\lualib.dir\all
 all: CMakeFiles\snow.dir\all
 
 .PHONY : all
@@ -64,23 +65,51 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles\lualib.dir\clean
 clean: CMakeFiles\snow.dir\clean
 
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/lualib.dir
+
+# All Build rule for target.
+CMakeFiles\lualib.dir\all:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\depend
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target lualib"
+.PHONY : CMakeFiles\lualib.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\lualib.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles 34
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\lualib.dir\rule
+
+# Convenience name for target.
+lualib: CMakeFiles\lualib.dir\rule
+
+.PHONY : lualib
+
+# clean rule for target.
+CMakeFiles\lualib.dir\clean:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\clean
+.PHONY : CMakeFiles\lualib.dir\clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/snow.dir
 
 # All Build rule for target.
-CMakeFiles\snow.dir\all:
+CMakeFiles\snow.dir\all: CMakeFiles\lualib.dir\all
 	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\depend
 	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target snow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44 "Built target snow"
 .PHONY : CMakeFiles\snow.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\snow.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles 44
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\snow.dir\rule

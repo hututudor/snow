@@ -17,6 +17,68 @@
 					<DistClean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Tudor/projects/snow/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lualib">
+				<Option output="C:/Users/Tudor/projects/snow/cmake-build-debug/lua.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Tudor/projects/snow/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl_image/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/lua/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/glm"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sol"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 lualib"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lualib/fast">
+				<Option output="C:/Users/Tudor/projects/snow/cmake-build-debug/lua.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Tudor/projects/snow/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl_image/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/lua/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/glm"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sol"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 lualib/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="snow">
 				<Option output="C:/Users/Tudor/projects/snow/cmake-build-debug/snow.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Tudor/projects/snow/cmake-build-debug"/>
@@ -24,6 +86,11 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl_image/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/lua/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/glm"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sol"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
@@ -45,6 +112,11 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sdl_image/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/lua/include"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/glm"/>
+					<Add directory="C:/Users/Tudor/projects/snow/deps/sol"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
@@ -54,16 +126,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 snow/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Tudor/projects/snow/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
 					<CompileFile command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f C:\Users\Tudor\projects\snow\cmake-build-debug\Makefile VERBOSE=1 clean"/>
@@ -80,7 +142,217 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Tudor/projects/snow/main.cpp">
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lapi.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lapi.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lauxlib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lauxlib.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lbaselib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lbitlib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lcode.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lcode.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lcorolib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lctype.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lctype.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ldblib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ldebug.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ldebug.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ldo.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ldo.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ldump.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lfunc.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lfunc.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lgc.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lgc.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/linit.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/liolib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/llex.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/llex.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lmathlib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lmem.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lmem.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/loadlib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lobject.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lobject.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lopcodes.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lopcodes.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/loslib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lparser.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lparser.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lstate.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lstate.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lstring.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lstring.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lstrlib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ltable.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ltable.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ltablib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ltm.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/ltm.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lundump.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lundump.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lutf8lib.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lvm.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lvm.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lzio.c">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/deps/lua/src/lzio.h">
+			<Option target="lualib"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/Config.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/ecs/Component.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/ecs/Component.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/ecs/Entity.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/ecs/Entity.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/infrastructure/Renderer.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/infrastructure/Renderer.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/infrastructure/World.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/infrastructure/World.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/lua/Lua.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/lua/Lua.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/main.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/resources/Preferences.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/resources/Preferences.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/resources/ResourceManager.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/resources/ResourceManager.h">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/resources/Texture.cpp">
+			<Option target="snow"/>
+		</Unit>
+		<Unit filename="C:/Users/Tudor/projects/snow/src/resources/Texture.h">
 			<Option target="snow"/>
 		</Unit>
 		<Unit filename="C:/Users/Tudor/projects/snow/CMakeLists.txt">

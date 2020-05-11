@@ -201,6 +201,18 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a library.
+LIBLUA53:FILEPATH=LIBLUA53-NOTFOUND
+
+//Path to a library.
+Lua:FILEPATH=Lua-NOTFOUND
+
+//Value Computed by CMake
+lua_BINARY_DIR:STATIC=C:/Users/Tudor/projects/snow/cmake-build-debug/deps/lua
+
+//Value Computed by CMake
+lua_SOURCE_DIR:STATIC=C:/Users/Tudor/projects/snow/deps/lua
+
 //Value Computed by CMake
 snow_BINARY_DIR:STATIC=C:/Users/Tudor/projects/snow/cmake-build-debug
 

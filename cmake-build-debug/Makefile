@@ -112,6 +112,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lualib
+
+# Build rule for target.
+lualib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) lualib
+.PHONY : lualib
+
+# fast build rule for target.
+lualib\fast:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\build
+.PHONY : lualib\fast
+
+#=============================================================================
 # Target rules for targets named snow
 
 # Build rule for target.
@@ -124,32 +137,1139 @@ snow\fast:
 	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\build
 .PHONY : snow\fast
 
-main.obj: main.cpp.obj
+deps\lua\src\lapi.obj: deps\lua\src\lapi.c.obj
 
-.PHONY : main.obj
+.PHONY : deps\lua\src\lapi.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+deps\lua\src\lapi.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lapi.c.obj
+.PHONY : deps\lua\src\lapi.c.obj
 
-main.i: main.cpp.i
+deps\lua\src\lapi.i: deps\lua\src\lapi.c.i
 
-.PHONY : main.i
+.PHONY : deps\lua\src\lapi.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\main.cpp.i
-.PHONY : main.cpp.i
+deps\lua\src\lapi.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lapi.c.i
+.PHONY : deps\lua\src\lapi.c.i
 
-main.s: main.cpp.s
+deps\lua\src\lapi.s: deps\lua\src\lapi.c.s
 
-.PHONY : main.s
+.PHONY : deps\lua\src\lapi.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\main.cpp.s
-.PHONY : main.cpp.s
+deps\lua\src\lapi.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lapi.c.s
+.PHONY : deps\lua\src\lapi.c.s
+
+deps\lua\src\lauxlib.obj: deps\lua\src\lauxlib.c.obj
+
+.PHONY : deps\lua\src\lauxlib.obj
+
+# target to build an object file
+deps\lua\src\lauxlib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lauxlib.c.obj
+.PHONY : deps\lua\src\lauxlib.c.obj
+
+deps\lua\src\lauxlib.i: deps\lua\src\lauxlib.c.i
+
+.PHONY : deps\lua\src\lauxlib.i
+
+# target to preprocess a source file
+deps\lua\src\lauxlib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lauxlib.c.i
+.PHONY : deps\lua\src\lauxlib.c.i
+
+deps\lua\src\lauxlib.s: deps\lua\src\lauxlib.c.s
+
+.PHONY : deps\lua\src\lauxlib.s
+
+# target to generate assembly for a file
+deps\lua\src\lauxlib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lauxlib.c.s
+.PHONY : deps\lua\src\lauxlib.c.s
+
+deps\lua\src\lbaselib.obj: deps\lua\src\lbaselib.c.obj
+
+.PHONY : deps\lua\src\lbaselib.obj
+
+# target to build an object file
+deps\lua\src\lbaselib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lbaselib.c.obj
+.PHONY : deps\lua\src\lbaselib.c.obj
+
+deps\lua\src\lbaselib.i: deps\lua\src\lbaselib.c.i
+
+.PHONY : deps\lua\src\lbaselib.i
+
+# target to preprocess a source file
+deps\lua\src\lbaselib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lbaselib.c.i
+.PHONY : deps\lua\src\lbaselib.c.i
+
+deps\lua\src\lbaselib.s: deps\lua\src\lbaselib.c.s
+
+.PHONY : deps\lua\src\lbaselib.s
+
+# target to generate assembly for a file
+deps\lua\src\lbaselib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lbaselib.c.s
+.PHONY : deps\lua\src\lbaselib.c.s
+
+deps\lua\src\lbitlib.obj: deps\lua\src\lbitlib.c.obj
+
+.PHONY : deps\lua\src\lbitlib.obj
+
+# target to build an object file
+deps\lua\src\lbitlib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lbitlib.c.obj
+.PHONY : deps\lua\src\lbitlib.c.obj
+
+deps\lua\src\lbitlib.i: deps\lua\src\lbitlib.c.i
+
+.PHONY : deps\lua\src\lbitlib.i
+
+# target to preprocess a source file
+deps\lua\src\lbitlib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lbitlib.c.i
+.PHONY : deps\lua\src\lbitlib.c.i
+
+deps\lua\src\lbitlib.s: deps\lua\src\lbitlib.c.s
+
+.PHONY : deps\lua\src\lbitlib.s
+
+# target to generate assembly for a file
+deps\lua\src\lbitlib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lbitlib.c.s
+.PHONY : deps\lua\src\lbitlib.c.s
+
+deps\lua\src\lcode.obj: deps\lua\src\lcode.c.obj
+
+.PHONY : deps\lua\src\lcode.obj
+
+# target to build an object file
+deps\lua\src\lcode.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lcode.c.obj
+.PHONY : deps\lua\src\lcode.c.obj
+
+deps\lua\src\lcode.i: deps\lua\src\lcode.c.i
+
+.PHONY : deps\lua\src\lcode.i
+
+# target to preprocess a source file
+deps\lua\src\lcode.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lcode.c.i
+.PHONY : deps\lua\src\lcode.c.i
+
+deps\lua\src\lcode.s: deps\lua\src\lcode.c.s
+
+.PHONY : deps\lua\src\lcode.s
+
+# target to generate assembly for a file
+deps\lua\src\lcode.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lcode.c.s
+.PHONY : deps\lua\src\lcode.c.s
+
+deps\lua\src\lcorolib.obj: deps\lua\src\lcorolib.c.obj
+
+.PHONY : deps\lua\src\lcorolib.obj
+
+# target to build an object file
+deps\lua\src\lcorolib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lcorolib.c.obj
+.PHONY : deps\lua\src\lcorolib.c.obj
+
+deps\lua\src\lcorolib.i: deps\lua\src\lcorolib.c.i
+
+.PHONY : deps\lua\src\lcorolib.i
+
+# target to preprocess a source file
+deps\lua\src\lcorolib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lcorolib.c.i
+.PHONY : deps\lua\src\lcorolib.c.i
+
+deps\lua\src\lcorolib.s: deps\lua\src\lcorolib.c.s
+
+.PHONY : deps\lua\src\lcorolib.s
+
+# target to generate assembly for a file
+deps\lua\src\lcorolib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lcorolib.c.s
+.PHONY : deps\lua\src\lcorolib.c.s
+
+deps\lua\src\lctype.obj: deps\lua\src\lctype.c.obj
+
+.PHONY : deps\lua\src\lctype.obj
+
+# target to build an object file
+deps\lua\src\lctype.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lctype.c.obj
+.PHONY : deps\lua\src\lctype.c.obj
+
+deps\lua\src\lctype.i: deps\lua\src\lctype.c.i
+
+.PHONY : deps\lua\src\lctype.i
+
+# target to preprocess a source file
+deps\lua\src\lctype.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lctype.c.i
+.PHONY : deps\lua\src\lctype.c.i
+
+deps\lua\src\lctype.s: deps\lua\src\lctype.c.s
+
+.PHONY : deps\lua\src\lctype.s
+
+# target to generate assembly for a file
+deps\lua\src\lctype.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lctype.c.s
+.PHONY : deps\lua\src\lctype.c.s
+
+deps\lua\src\ldblib.obj: deps\lua\src\ldblib.c.obj
+
+.PHONY : deps\lua\src\ldblib.obj
+
+# target to build an object file
+deps\lua\src\ldblib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldblib.c.obj
+.PHONY : deps\lua\src\ldblib.c.obj
+
+deps\lua\src\ldblib.i: deps\lua\src\ldblib.c.i
+
+.PHONY : deps\lua\src\ldblib.i
+
+# target to preprocess a source file
+deps\lua\src\ldblib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldblib.c.i
+.PHONY : deps\lua\src\ldblib.c.i
+
+deps\lua\src\ldblib.s: deps\lua\src\ldblib.c.s
+
+.PHONY : deps\lua\src\ldblib.s
+
+# target to generate assembly for a file
+deps\lua\src\ldblib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldblib.c.s
+.PHONY : deps\lua\src\ldblib.c.s
+
+deps\lua\src\ldebug.obj: deps\lua\src\ldebug.c.obj
+
+.PHONY : deps\lua\src\ldebug.obj
+
+# target to build an object file
+deps\lua\src\ldebug.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldebug.c.obj
+.PHONY : deps\lua\src\ldebug.c.obj
+
+deps\lua\src\ldebug.i: deps\lua\src\ldebug.c.i
+
+.PHONY : deps\lua\src\ldebug.i
+
+# target to preprocess a source file
+deps\lua\src\ldebug.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldebug.c.i
+.PHONY : deps\lua\src\ldebug.c.i
+
+deps\lua\src\ldebug.s: deps\lua\src\ldebug.c.s
+
+.PHONY : deps\lua\src\ldebug.s
+
+# target to generate assembly for a file
+deps\lua\src\ldebug.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldebug.c.s
+.PHONY : deps\lua\src\ldebug.c.s
+
+deps\lua\src\ldo.obj: deps\lua\src\ldo.c.obj
+
+.PHONY : deps\lua\src\ldo.obj
+
+# target to build an object file
+deps\lua\src\ldo.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldo.c.obj
+.PHONY : deps\lua\src\ldo.c.obj
+
+deps\lua\src\ldo.i: deps\lua\src\ldo.c.i
+
+.PHONY : deps\lua\src\ldo.i
+
+# target to preprocess a source file
+deps\lua\src\ldo.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldo.c.i
+.PHONY : deps\lua\src\ldo.c.i
+
+deps\lua\src\ldo.s: deps\lua\src\ldo.c.s
+
+.PHONY : deps\lua\src\ldo.s
+
+# target to generate assembly for a file
+deps\lua\src\ldo.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldo.c.s
+.PHONY : deps\lua\src\ldo.c.s
+
+deps\lua\src\ldump.obj: deps\lua\src\ldump.c.obj
+
+.PHONY : deps\lua\src\ldump.obj
+
+# target to build an object file
+deps\lua\src\ldump.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldump.c.obj
+.PHONY : deps\lua\src\ldump.c.obj
+
+deps\lua\src\ldump.i: deps\lua\src\ldump.c.i
+
+.PHONY : deps\lua\src\ldump.i
+
+# target to preprocess a source file
+deps\lua\src\ldump.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldump.c.i
+.PHONY : deps\lua\src\ldump.c.i
+
+deps\lua\src\ldump.s: deps\lua\src\ldump.c.s
+
+.PHONY : deps\lua\src\ldump.s
+
+# target to generate assembly for a file
+deps\lua\src\ldump.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ldump.c.s
+.PHONY : deps\lua\src\ldump.c.s
+
+deps\lua\src\lfunc.obj: deps\lua\src\lfunc.c.obj
+
+.PHONY : deps\lua\src\lfunc.obj
+
+# target to build an object file
+deps\lua\src\lfunc.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lfunc.c.obj
+.PHONY : deps\lua\src\lfunc.c.obj
+
+deps\lua\src\lfunc.i: deps\lua\src\lfunc.c.i
+
+.PHONY : deps\lua\src\lfunc.i
+
+# target to preprocess a source file
+deps\lua\src\lfunc.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lfunc.c.i
+.PHONY : deps\lua\src\lfunc.c.i
+
+deps\lua\src\lfunc.s: deps\lua\src\lfunc.c.s
+
+.PHONY : deps\lua\src\lfunc.s
+
+# target to generate assembly for a file
+deps\lua\src\lfunc.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lfunc.c.s
+.PHONY : deps\lua\src\lfunc.c.s
+
+deps\lua\src\lgc.obj: deps\lua\src\lgc.c.obj
+
+.PHONY : deps\lua\src\lgc.obj
+
+# target to build an object file
+deps\lua\src\lgc.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lgc.c.obj
+.PHONY : deps\lua\src\lgc.c.obj
+
+deps\lua\src\lgc.i: deps\lua\src\lgc.c.i
+
+.PHONY : deps\lua\src\lgc.i
+
+# target to preprocess a source file
+deps\lua\src\lgc.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lgc.c.i
+.PHONY : deps\lua\src\lgc.c.i
+
+deps\lua\src\lgc.s: deps\lua\src\lgc.c.s
+
+.PHONY : deps\lua\src\lgc.s
+
+# target to generate assembly for a file
+deps\lua\src\lgc.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lgc.c.s
+.PHONY : deps\lua\src\lgc.c.s
+
+deps\lua\src\linit.obj: deps\lua\src\linit.c.obj
+
+.PHONY : deps\lua\src\linit.obj
+
+# target to build an object file
+deps\lua\src\linit.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\linit.c.obj
+.PHONY : deps\lua\src\linit.c.obj
+
+deps\lua\src\linit.i: deps\lua\src\linit.c.i
+
+.PHONY : deps\lua\src\linit.i
+
+# target to preprocess a source file
+deps\lua\src\linit.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\linit.c.i
+.PHONY : deps\lua\src\linit.c.i
+
+deps\lua\src\linit.s: deps\lua\src\linit.c.s
+
+.PHONY : deps\lua\src\linit.s
+
+# target to generate assembly for a file
+deps\lua\src\linit.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\linit.c.s
+.PHONY : deps\lua\src\linit.c.s
+
+deps\lua\src\liolib.obj: deps\lua\src\liolib.c.obj
+
+.PHONY : deps\lua\src\liolib.obj
+
+# target to build an object file
+deps\lua\src\liolib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\liolib.c.obj
+.PHONY : deps\lua\src\liolib.c.obj
+
+deps\lua\src\liolib.i: deps\lua\src\liolib.c.i
+
+.PHONY : deps\lua\src\liolib.i
+
+# target to preprocess a source file
+deps\lua\src\liolib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\liolib.c.i
+.PHONY : deps\lua\src\liolib.c.i
+
+deps\lua\src\liolib.s: deps\lua\src\liolib.c.s
+
+.PHONY : deps\lua\src\liolib.s
+
+# target to generate assembly for a file
+deps\lua\src\liolib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\liolib.c.s
+.PHONY : deps\lua\src\liolib.c.s
+
+deps\lua\src\llex.obj: deps\lua\src\llex.c.obj
+
+.PHONY : deps\lua\src\llex.obj
+
+# target to build an object file
+deps\lua\src\llex.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\llex.c.obj
+.PHONY : deps\lua\src\llex.c.obj
+
+deps\lua\src\llex.i: deps\lua\src\llex.c.i
+
+.PHONY : deps\lua\src\llex.i
+
+# target to preprocess a source file
+deps\lua\src\llex.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\llex.c.i
+.PHONY : deps\lua\src\llex.c.i
+
+deps\lua\src\llex.s: deps\lua\src\llex.c.s
+
+.PHONY : deps\lua\src\llex.s
+
+# target to generate assembly for a file
+deps\lua\src\llex.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\llex.c.s
+.PHONY : deps\lua\src\llex.c.s
+
+deps\lua\src\lmathlib.obj: deps\lua\src\lmathlib.c.obj
+
+.PHONY : deps\lua\src\lmathlib.obj
+
+# target to build an object file
+deps\lua\src\lmathlib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lmathlib.c.obj
+.PHONY : deps\lua\src\lmathlib.c.obj
+
+deps\lua\src\lmathlib.i: deps\lua\src\lmathlib.c.i
+
+.PHONY : deps\lua\src\lmathlib.i
+
+# target to preprocess a source file
+deps\lua\src\lmathlib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lmathlib.c.i
+.PHONY : deps\lua\src\lmathlib.c.i
+
+deps\lua\src\lmathlib.s: deps\lua\src\lmathlib.c.s
+
+.PHONY : deps\lua\src\lmathlib.s
+
+# target to generate assembly for a file
+deps\lua\src\lmathlib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lmathlib.c.s
+.PHONY : deps\lua\src\lmathlib.c.s
+
+deps\lua\src\lmem.obj: deps\lua\src\lmem.c.obj
+
+.PHONY : deps\lua\src\lmem.obj
+
+# target to build an object file
+deps\lua\src\lmem.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lmem.c.obj
+.PHONY : deps\lua\src\lmem.c.obj
+
+deps\lua\src\lmem.i: deps\lua\src\lmem.c.i
+
+.PHONY : deps\lua\src\lmem.i
+
+# target to preprocess a source file
+deps\lua\src\lmem.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lmem.c.i
+.PHONY : deps\lua\src\lmem.c.i
+
+deps\lua\src\lmem.s: deps\lua\src\lmem.c.s
+
+.PHONY : deps\lua\src\lmem.s
+
+# target to generate assembly for a file
+deps\lua\src\lmem.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lmem.c.s
+.PHONY : deps\lua\src\lmem.c.s
+
+deps\lua\src\loadlib.obj: deps\lua\src\loadlib.c.obj
+
+.PHONY : deps\lua\src\loadlib.obj
+
+# target to build an object file
+deps\lua\src\loadlib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\loadlib.c.obj
+.PHONY : deps\lua\src\loadlib.c.obj
+
+deps\lua\src\loadlib.i: deps\lua\src\loadlib.c.i
+
+.PHONY : deps\lua\src\loadlib.i
+
+# target to preprocess a source file
+deps\lua\src\loadlib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\loadlib.c.i
+.PHONY : deps\lua\src\loadlib.c.i
+
+deps\lua\src\loadlib.s: deps\lua\src\loadlib.c.s
+
+.PHONY : deps\lua\src\loadlib.s
+
+# target to generate assembly for a file
+deps\lua\src\loadlib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\loadlib.c.s
+.PHONY : deps\lua\src\loadlib.c.s
+
+deps\lua\src\lobject.obj: deps\lua\src\lobject.c.obj
+
+.PHONY : deps\lua\src\lobject.obj
+
+# target to build an object file
+deps\lua\src\lobject.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lobject.c.obj
+.PHONY : deps\lua\src\lobject.c.obj
+
+deps\lua\src\lobject.i: deps\lua\src\lobject.c.i
+
+.PHONY : deps\lua\src\lobject.i
+
+# target to preprocess a source file
+deps\lua\src\lobject.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lobject.c.i
+.PHONY : deps\lua\src\lobject.c.i
+
+deps\lua\src\lobject.s: deps\lua\src\lobject.c.s
+
+.PHONY : deps\lua\src\lobject.s
+
+# target to generate assembly for a file
+deps\lua\src\lobject.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lobject.c.s
+.PHONY : deps\lua\src\lobject.c.s
+
+deps\lua\src\lopcodes.obj: deps\lua\src\lopcodes.c.obj
+
+.PHONY : deps\lua\src\lopcodes.obj
+
+# target to build an object file
+deps\lua\src\lopcodes.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lopcodes.c.obj
+.PHONY : deps\lua\src\lopcodes.c.obj
+
+deps\lua\src\lopcodes.i: deps\lua\src\lopcodes.c.i
+
+.PHONY : deps\lua\src\lopcodes.i
+
+# target to preprocess a source file
+deps\lua\src\lopcodes.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lopcodes.c.i
+.PHONY : deps\lua\src\lopcodes.c.i
+
+deps\lua\src\lopcodes.s: deps\lua\src\lopcodes.c.s
+
+.PHONY : deps\lua\src\lopcodes.s
+
+# target to generate assembly for a file
+deps\lua\src\lopcodes.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lopcodes.c.s
+.PHONY : deps\lua\src\lopcodes.c.s
+
+deps\lua\src\loslib.obj: deps\lua\src\loslib.c.obj
+
+.PHONY : deps\lua\src\loslib.obj
+
+# target to build an object file
+deps\lua\src\loslib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\loslib.c.obj
+.PHONY : deps\lua\src\loslib.c.obj
+
+deps\lua\src\loslib.i: deps\lua\src\loslib.c.i
+
+.PHONY : deps\lua\src\loslib.i
+
+# target to preprocess a source file
+deps\lua\src\loslib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\loslib.c.i
+.PHONY : deps\lua\src\loslib.c.i
+
+deps\lua\src\loslib.s: deps\lua\src\loslib.c.s
+
+.PHONY : deps\lua\src\loslib.s
+
+# target to generate assembly for a file
+deps\lua\src\loslib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\loslib.c.s
+.PHONY : deps\lua\src\loslib.c.s
+
+deps\lua\src\lparser.obj: deps\lua\src\lparser.c.obj
+
+.PHONY : deps\lua\src\lparser.obj
+
+# target to build an object file
+deps\lua\src\lparser.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lparser.c.obj
+.PHONY : deps\lua\src\lparser.c.obj
+
+deps\lua\src\lparser.i: deps\lua\src\lparser.c.i
+
+.PHONY : deps\lua\src\lparser.i
+
+# target to preprocess a source file
+deps\lua\src\lparser.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lparser.c.i
+.PHONY : deps\lua\src\lparser.c.i
+
+deps\lua\src\lparser.s: deps\lua\src\lparser.c.s
+
+.PHONY : deps\lua\src\lparser.s
+
+# target to generate assembly for a file
+deps\lua\src\lparser.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lparser.c.s
+.PHONY : deps\lua\src\lparser.c.s
+
+deps\lua\src\lstate.obj: deps\lua\src\lstate.c.obj
+
+.PHONY : deps\lua\src\lstate.obj
+
+# target to build an object file
+deps\lua\src\lstate.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstate.c.obj
+.PHONY : deps\lua\src\lstate.c.obj
+
+deps\lua\src\lstate.i: deps\lua\src\lstate.c.i
+
+.PHONY : deps\lua\src\lstate.i
+
+# target to preprocess a source file
+deps\lua\src\lstate.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstate.c.i
+.PHONY : deps\lua\src\lstate.c.i
+
+deps\lua\src\lstate.s: deps\lua\src\lstate.c.s
+
+.PHONY : deps\lua\src\lstate.s
+
+# target to generate assembly for a file
+deps\lua\src\lstate.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstate.c.s
+.PHONY : deps\lua\src\lstate.c.s
+
+deps\lua\src\lstring.obj: deps\lua\src\lstring.c.obj
+
+.PHONY : deps\lua\src\lstring.obj
+
+# target to build an object file
+deps\lua\src\lstring.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstring.c.obj
+.PHONY : deps\lua\src\lstring.c.obj
+
+deps\lua\src\lstring.i: deps\lua\src\lstring.c.i
+
+.PHONY : deps\lua\src\lstring.i
+
+# target to preprocess a source file
+deps\lua\src\lstring.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstring.c.i
+.PHONY : deps\lua\src\lstring.c.i
+
+deps\lua\src\lstring.s: deps\lua\src\lstring.c.s
+
+.PHONY : deps\lua\src\lstring.s
+
+# target to generate assembly for a file
+deps\lua\src\lstring.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstring.c.s
+.PHONY : deps\lua\src\lstring.c.s
+
+deps\lua\src\lstrlib.obj: deps\lua\src\lstrlib.c.obj
+
+.PHONY : deps\lua\src\lstrlib.obj
+
+# target to build an object file
+deps\lua\src\lstrlib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstrlib.c.obj
+.PHONY : deps\lua\src\lstrlib.c.obj
+
+deps\lua\src\lstrlib.i: deps\lua\src\lstrlib.c.i
+
+.PHONY : deps\lua\src\lstrlib.i
+
+# target to preprocess a source file
+deps\lua\src\lstrlib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstrlib.c.i
+.PHONY : deps\lua\src\lstrlib.c.i
+
+deps\lua\src\lstrlib.s: deps\lua\src\lstrlib.c.s
+
+.PHONY : deps\lua\src\lstrlib.s
+
+# target to generate assembly for a file
+deps\lua\src\lstrlib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lstrlib.c.s
+.PHONY : deps\lua\src\lstrlib.c.s
+
+deps\lua\src\ltable.obj: deps\lua\src\ltable.c.obj
+
+.PHONY : deps\lua\src\ltable.obj
+
+# target to build an object file
+deps\lua\src\ltable.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltable.c.obj
+.PHONY : deps\lua\src\ltable.c.obj
+
+deps\lua\src\ltable.i: deps\lua\src\ltable.c.i
+
+.PHONY : deps\lua\src\ltable.i
+
+# target to preprocess a source file
+deps\lua\src\ltable.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltable.c.i
+.PHONY : deps\lua\src\ltable.c.i
+
+deps\lua\src\ltable.s: deps\lua\src\ltable.c.s
+
+.PHONY : deps\lua\src\ltable.s
+
+# target to generate assembly for a file
+deps\lua\src\ltable.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltable.c.s
+.PHONY : deps\lua\src\ltable.c.s
+
+deps\lua\src\ltablib.obj: deps\lua\src\ltablib.c.obj
+
+.PHONY : deps\lua\src\ltablib.obj
+
+# target to build an object file
+deps\lua\src\ltablib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltablib.c.obj
+.PHONY : deps\lua\src\ltablib.c.obj
+
+deps\lua\src\ltablib.i: deps\lua\src\ltablib.c.i
+
+.PHONY : deps\lua\src\ltablib.i
+
+# target to preprocess a source file
+deps\lua\src\ltablib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltablib.c.i
+.PHONY : deps\lua\src\ltablib.c.i
+
+deps\lua\src\ltablib.s: deps\lua\src\ltablib.c.s
+
+.PHONY : deps\lua\src\ltablib.s
+
+# target to generate assembly for a file
+deps\lua\src\ltablib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltablib.c.s
+.PHONY : deps\lua\src\ltablib.c.s
+
+deps\lua\src\ltm.obj: deps\lua\src\ltm.c.obj
+
+.PHONY : deps\lua\src\ltm.obj
+
+# target to build an object file
+deps\lua\src\ltm.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltm.c.obj
+.PHONY : deps\lua\src\ltm.c.obj
+
+deps\lua\src\ltm.i: deps\lua\src\ltm.c.i
+
+.PHONY : deps\lua\src\ltm.i
+
+# target to preprocess a source file
+deps\lua\src\ltm.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltm.c.i
+.PHONY : deps\lua\src\ltm.c.i
+
+deps\lua\src\ltm.s: deps\lua\src\ltm.c.s
+
+.PHONY : deps\lua\src\ltm.s
+
+# target to generate assembly for a file
+deps\lua\src\ltm.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\ltm.c.s
+.PHONY : deps\lua\src\ltm.c.s
+
+deps\lua\src\lundump.obj: deps\lua\src\lundump.c.obj
+
+.PHONY : deps\lua\src\lundump.obj
+
+# target to build an object file
+deps\lua\src\lundump.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lundump.c.obj
+.PHONY : deps\lua\src\lundump.c.obj
+
+deps\lua\src\lundump.i: deps\lua\src\lundump.c.i
+
+.PHONY : deps\lua\src\lundump.i
+
+# target to preprocess a source file
+deps\lua\src\lundump.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lundump.c.i
+.PHONY : deps\lua\src\lundump.c.i
+
+deps\lua\src\lundump.s: deps\lua\src\lundump.c.s
+
+.PHONY : deps\lua\src\lundump.s
+
+# target to generate assembly for a file
+deps\lua\src\lundump.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lundump.c.s
+.PHONY : deps\lua\src\lundump.c.s
+
+deps\lua\src\lutf8lib.obj: deps\lua\src\lutf8lib.c.obj
+
+.PHONY : deps\lua\src\lutf8lib.obj
+
+# target to build an object file
+deps\lua\src\lutf8lib.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lutf8lib.c.obj
+.PHONY : deps\lua\src\lutf8lib.c.obj
+
+deps\lua\src\lutf8lib.i: deps\lua\src\lutf8lib.c.i
+
+.PHONY : deps\lua\src\lutf8lib.i
+
+# target to preprocess a source file
+deps\lua\src\lutf8lib.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lutf8lib.c.i
+.PHONY : deps\lua\src\lutf8lib.c.i
+
+deps\lua\src\lutf8lib.s: deps\lua\src\lutf8lib.c.s
+
+.PHONY : deps\lua\src\lutf8lib.s
+
+# target to generate assembly for a file
+deps\lua\src\lutf8lib.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lutf8lib.c.s
+.PHONY : deps\lua\src\lutf8lib.c.s
+
+deps\lua\src\lvm.obj: deps\lua\src\lvm.c.obj
+
+.PHONY : deps\lua\src\lvm.obj
+
+# target to build an object file
+deps\lua\src\lvm.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lvm.c.obj
+.PHONY : deps\lua\src\lvm.c.obj
+
+deps\lua\src\lvm.i: deps\lua\src\lvm.c.i
+
+.PHONY : deps\lua\src\lvm.i
+
+# target to preprocess a source file
+deps\lua\src\lvm.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lvm.c.i
+.PHONY : deps\lua\src\lvm.c.i
+
+deps\lua\src\lvm.s: deps\lua\src\lvm.c.s
+
+.PHONY : deps\lua\src\lvm.s
+
+# target to generate assembly for a file
+deps\lua\src\lvm.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lvm.c.s
+.PHONY : deps\lua\src\lvm.c.s
+
+deps\lua\src\lzio.obj: deps\lua\src\lzio.c.obj
+
+.PHONY : deps\lua\src\lzio.obj
+
+# target to build an object file
+deps\lua\src\lzio.c.obj:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lzio.c.obj
+.PHONY : deps\lua\src\lzio.c.obj
+
+deps\lua\src\lzio.i: deps\lua\src\lzio.c.i
+
+.PHONY : deps\lua\src\lzio.i
+
+# target to preprocess a source file
+deps\lua\src\lzio.c.i:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lzio.c.i
+.PHONY : deps\lua\src\lzio.c.i
+
+deps\lua\src\lzio.s: deps\lua\src\lzio.c.s
+
+.PHONY : deps\lua\src\lzio.s
+
+# target to generate assembly for a file
+deps\lua\src\lzio.c.s:
+	$(MAKE) -f CMakeFiles\lualib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\lualib.dir\deps\lua\src\lzio.c.s
+.PHONY : deps\lua\src\lzio.c.s
+
+src\ecs\Component.obj: src\ecs\Component.cpp.obj
+
+.PHONY : src\ecs\Component.obj
+
+# target to build an object file
+src\ecs\Component.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\ecs\Component.cpp.obj
+.PHONY : src\ecs\Component.cpp.obj
+
+src\ecs\Component.i: src\ecs\Component.cpp.i
+
+.PHONY : src\ecs\Component.i
+
+# target to preprocess a source file
+src\ecs\Component.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\ecs\Component.cpp.i
+.PHONY : src\ecs\Component.cpp.i
+
+src\ecs\Component.s: src\ecs\Component.cpp.s
+
+.PHONY : src\ecs\Component.s
+
+# target to generate assembly for a file
+src\ecs\Component.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\ecs\Component.cpp.s
+.PHONY : src\ecs\Component.cpp.s
+
+src\ecs\Entity.obj: src\ecs\Entity.cpp.obj
+
+.PHONY : src\ecs\Entity.obj
+
+# target to build an object file
+src\ecs\Entity.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\ecs\Entity.cpp.obj
+.PHONY : src\ecs\Entity.cpp.obj
+
+src\ecs\Entity.i: src\ecs\Entity.cpp.i
+
+.PHONY : src\ecs\Entity.i
+
+# target to preprocess a source file
+src\ecs\Entity.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\ecs\Entity.cpp.i
+.PHONY : src\ecs\Entity.cpp.i
+
+src\ecs\Entity.s: src\ecs\Entity.cpp.s
+
+.PHONY : src\ecs\Entity.s
+
+# target to generate assembly for a file
+src\ecs\Entity.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\ecs\Entity.cpp.s
+.PHONY : src\ecs\Entity.cpp.s
+
+src\infrastructure\Renderer.obj: src\infrastructure\Renderer.cpp.obj
+
+.PHONY : src\infrastructure\Renderer.obj
+
+# target to build an object file
+src\infrastructure\Renderer.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.obj
+.PHONY : src\infrastructure\Renderer.cpp.obj
+
+src\infrastructure\Renderer.i: src\infrastructure\Renderer.cpp.i
+
+.PHONY : src\infrastructure\Renderer.i
+
+# target to preprocess a source file
+src\infrastructure\Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.i
+.PHONY : src\infrastructure\Renderer.cpp.i
+
+src\infrastructure\Renderer.s: src\infrastructure\Renderer.cpp.s
+
+.PHONY : src\infrastructure\Renderer.s
+
+# target to generate assembly for a file
+src\infrastructure\Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.s
+.PHONY : src\infrastructure\Renderer.cpp.s
+
+src\infrastructure\World.obj: src\infrastructure\World.cpp.obj
+
+.PHONY : src\infrastructure\World.obj
+
+# target to build an object file
+src\infrastructure\World.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\infrastructure\World.cpp.obj
+.PHONY : src\infrastructure\World.cpp.obj
+
+src\infrastructure\World.i: src\infrastructure\World.cpp.i
+
+.PHONY : src\infrastructure\World.i
+
+# target to preprocess a source file
+src\infrastructure\World.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\infrastructure\World.cpp.i
+.PHONY : src\infrastructure\World.cpp.i
+
+src\infrastructure\World.s: src\infrastructure\World.cpp.s
+
+.PHONY : src\infrastructure\World.s
+
+# target to generate assembly for a file
+src\infrastructure\World.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\infrastructure\World.cpp.s
+.PHONY : src\infrastructure\World.cpp.s
+
+src\lua\Lua.obj: src\lua\Lua.cpp.obj
+
+.PHONY : src\lua\Lua.obj
+
+# target to build an object file
+src\lua\Lua.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\lua\Lua.cpp.obj
+.PHONY : src\lua\Lua.cpp.obj
+
+src\lua\Lua.i: src\lua\Lua.cpp.i
+
+.PHONY : src\lua\Lua.i
+
+# target to preprocess a source file
+src\lua\Lua.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\lua\Lua.cpp.i
+.PHONY : src\lua\Lua.cpp.i
+
+src\lua\Lua.s: src\lua\Lua.cpp.s
+
+.PHONY : src\lua\Lua.s
+
+# target to generate assembly for a file
+src\lua\Lua.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\lua\Lua.cpp.s
+.PHONY : src\lua\Lua.cpp.s
+
+src\main.obj: src\main.cpp.obj
+
+.PHONY : src\main.obj
+
+# target to build an object file
+src\main.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\main.cpp.obj
+.PHONY : src\main.cpp.obj
+
+src\main.i: src\main.cpp.i
+
+.PHONY : src\main.i
+
+# target to preprocess a source file
+src\main.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\main.cpp.i
+.PHONY : src\main.cpp.i
+
+src\main.s: src\main.cpp.s
+
+.PHONY : src\main.s
+
+# target to generate assembly for a file
+src\main.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\main.cpp.s
+.PHONY : src\main.cpp.s
+
+src\resources\Preferences.obj: src\resources\Preferences.cpp.obj
+
+.PHONY : src\resources\Preferences.obj
+
+# target to build an object file
+src\resources\Preferences.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\Preferences.cpp.obj
+.PHONY : src\resources\Preferences.cpp.obj
+
+src\resources\Preferences.i: src\resources\Preferences.cpp.i
+
+.PHONY : src\resources\Preferences.i
+
+# target to preprocess a source file
+src\resources\Preferences.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\Preferences.cpp.i
+.PHONY : src\resources\Preferences.cpp.i
+
+src\resources\Preferences.s: src\resources\Preferences.cpp.s
+
+.PHONY : src\resources\Preferences.s
+
+# target to generate assembly for a file
+src\resources\Preferences.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\Preferences.cpp.s
+.PHONY : src\resources\Preferences.cpp.s
+
+src\resources\ResourceManager.obj: src\resources\ResourceManager.cpp.obj
+
+.PHONY : src\resources\ResourceManager.obj
+
+# target to build an object file
+src\resources\ResourceManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.obj
+.PHONY : src\resources\ResourceManager.cpp.obj
+
+src\resources\ResourceManager.i: src\resources\ResourceManager.cpp.i
+
+.PHONY : src\resources\ResourceManager.i
+
+# target to preprocess a source file
+src\resources\ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.i
+.PHONY : src\resources\ResourceManager.cpp.i
+
+src\resources\ResourceManager.s: src\resources\ResourceManager.cpp.s
+
+.PHONY : src\resources\ResourceManager.s
+
+# target to generate assembly for a file
+src\resources\ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.s
+.PHONY : src\resources\ResourceManager.cpp.s
+
+src\resources\Texture.obj: src\resources\Texture.cpp.obj
+
+.PHONY : src\resources\Texture.obj
+
+# target to build an object file
+src\resources\Texture.cpp.obj:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\Texture.cpp.obj
+.PHONY : src\resources\Texture.cpp.obj
+
+src\resources\Texture.i: src\resources\Texture.cpp.i
+
+.PHONY : src\resources\Texture.i
+
+# target to preprocess a source file
+src\resources\Texture.cpp.i:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\Texture.cpp.i
+.PHONY : src\resources\Texture.cpp.i
+
+src\resources\Texture.s: src\resources\Texture.cpp.s
+
+.PHONY : src\resources\Texture.s
+
+# target to generate assembly for a file
+src\resources\Texture.cpp.s:
+	$(MAKE) -f CMakeFiles\snow.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\snow.dir\src\resources\Texture.cpp.s
+.PHONY : src\resources\Texture.cpp.s
 
 # Help Target
 help:
@@ -157,12 +1277,136 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... snow
 	@echo ... edit_cache
+	@echo ... lualib
+	@echo ... snow
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... deps/lua/src/lapi.obj
+	@echo ... deps/lua/src/lapi.i
+	@echo ... deps/lua/src/lapi.s
+	@echo ... deps/lua/src/lauxlib.obj
+	@echo ... deps/lua/src/lauxlib.i
+	@echo ... deps/lua/src/lauxlib.s
+	@echo ... deps/lua/src/lbaselib.obj
+	@echo ... deps/lua/src/lbaselib.i
+	@echo ... deps/lua/src/lbaselib.s
+	@echo ... deps/lua/src/lbitlib.obj
+	@echo ... deps/lua/src/lbitlib.i
+	@echo ... deps/lua/src/lbitlib.s
+	@echo ... deps/lua/src/lcode.obj
+	@echo ... deps/lua/src/lcode.i
+	@echo ... deps/lua/src/lcode.s
+	@echo ... deps/lua/src/lcorolib.obj
+	@echo ... deps/lua/src/lcorolib.i
+	@echo ... deps/lua/src/lcorolib.s
+	@echo ... deps/lua/src/lctype.obj
+	@echo ... deps/lua/src/lctype.i
+	@echo ... deps/lua/src/lctype.s
+	@echo ... deps/lua/src/ldblib.obj
+	@echo ... deps/lua/src/ldblib.i
+	@echo ... deps/lua/src/ldblib.s
+	@echo ... deps/lua/src/ldebug.obj
+	@echo ... deps/lua/src/ldebug.i
+	@echo ... deps/lua/src/ldebug.s
+	@echo ... deps/lua/src/ldo.obj
+	@echo ... deps/lua/src/ldo.i
+	@echo ... deps/lua/src/ldo.s
+	@echo ... deps/lua/src/ldump.obj
+	@echo ... deps/lua/src/ldump.i
+	@echo ... deps/lua/src/ldump.s
+	@echo ... deps/lua/src/lfunc.obj
+	@echo ... deps/lua/src/lfunc.i
+	@echo ... deps/lua/src/lfunc.s
+	@echo ... deps/lua/src/lgc.obj
+	@echo ... deps/lua/src/lgc.i
+	@echo ... deps/lua/src/lgc.s
+	@echo ... deps/lua/src/linit.obj
+	@echo ... deps/lua/src/linit.i
+	@echo ... deps/lua/src/linit.s
+	@echo ... deps/lua/src/liolib.obj
+	@echo ... deps/lua/src/liolib.i
+	@echo ... deps/lua/src/liolib.s
+	@echo ... deps/lua/src/llex.obj
+	@echo ... deps/lua/src/llex.i
+	@echo ... deps/lua/src/llex.s
+	@echo ... deps/lua/src/lmathlib.obj
+	@echo ... deps/lua/src/lmathlib.i
+	@echo ... deps/lua/src/lmathlib.s
+	@echo ... deps/lua/src/lmem.obj
+	@echo ... deps/lua/src/lmem.i
+	@echo ... deps/lua/src/lmem.s
+	@echo ... deps/lua/src/loadlib.obj
+	@echo ... deps/lua/src/loadlib.i
+	@echo ... deps/lua/src/loadlib.s
+	@echo ... deps/lua/src/lobject.obj
+	@echo ... deps/lua/src/lobject.i
+	@echo ... deps/lua/src/lobject.s
+	@echo ... deps/lua/src/lopcodes.obj
+	@echo ... deps/lua/src/lopcodes.i
+	@echo ... deps/lua/src/lopcodes.s
+	@echo ... deps/lua/src/loslib.obj
+	@echo ... deps/lua/src/loslib.i
+	@echo ... deps/lua/src/loslib.s
+	@echo ... deps/lua/src/lparser.obj
+	@echo ... deps/lua/src/lparser.i
+	@echo ... deps/lua/src/lparser.s
+	@echo ... deps/lua/src/lstate.obj
+	@echo ... deps/lua/src/lstate.i
+	@echo ... deps/lua/src/lstate.s
+	@echo ... deps/lua/src/lstring.obj
+	@echo ... deps/lua/src/lstring.i
+	@echo ... deps/lua/src/lstring.s
+	@echo ... deps/lua/src/lstrlib.obj
+	@echo ... deps/lua/src/lstrlib.i
+	@echo ... deps/lua/src/lstrlib.s
+	@echo ... deps/lua/src/ltable.obj
+	@echo ... deps/lua/src/ltable.i
+	@echo ... deps/lua/src/ltable.s
+	@echo ... deps/lua/src/ltablib.obj
+	@echo ... deps/lua/src/ltablib.i
+	@echo ... deps/lua/src/ltablib.s
+	@echo ... deps/lua/src/ltm.obj
+	@echo ... deps/lua/src/ltm.i
+	@echo ... deps/lua/src/ltm.s
+	@echo ... deps/lua/src/lundump.obj
+	@echo ... deps/lua/src/lundump.i
+	@echo ... deps/lua/src/lundump.s
+	@echo ... deps/lua/src/lutf8lib.obj
+	@echo ... deps/lua/src/lutf8lib.i
+	@echo ... deps/lua/src/lutf8lib.s
+	@echo ... deps/lua/src/lvm.obj
+	@echo ... deps/lua/src/lvm.i
+	@echo ... deps/lua/src/lvm.s
+	@echo ... deps/lua/src/lzio.obj
+	@echo ... deps/lua/src/lzio.i
+	@echo ... deps/lua/src/lzio.s
+	@echo ... src/ecs/Component.obj
+	@echo ... src/ecs/Component.i
+	@echo ... src/ecs/Component.s
+	@echo ... src/ecs/Entity.obj
+	@echo ... src/ecs/Entity.i
+	@echo ... src/ecs/Entity.s
+	@echo ... src/infrastructure/Renderer.obj
+	@echo ... src/infrastructure/Renderer.i
+	@echo ... src/infrastructure/Renderer.s
+	@echo ... src/infrastructure/World.obj
+	@echo ... src/infrastructure/World.i
+	@echo ... src/infrastructure/World.s
+	@echo ... src/lua/Lua.obj
+	@echo ... src/lua/Lua.i
+	@echo ... src/lua/Lua.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/resources/Preferences.obj
+	@echo ... src/resources/Preferences.i
+	@echo ... src/resources/Preferences.s
+	@echo ... src/resources/ResourceManager.obj
+	@echo ... src/resources/ResourceManager.i
+	@echo ... src/resources/ResourceManager.s
+	@echo ... src/resources/Texture.obj
+	@echo ... src/resources/Texture.i
+	@echo ... src/resources/Texture.s
 .PHONY : help
 
 

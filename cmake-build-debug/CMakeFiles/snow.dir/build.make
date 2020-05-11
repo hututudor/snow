@@ -58,38 +58,207 @@ include CMakeFiles\snow.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\snow.dir\flags.make
 
-CMakeFiles\snow.dir\main.cpp.obj: CMakeFiles\snow.dir\flags.make
-CMakeFiles\snow.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snow.dir/main.cpp.obj"
+CMakeFiles\snow.dir\src\main.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\main.cpp.obj: ..\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snow.dir/src/main.cpp.obj"
 	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\main.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\main.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\main.cpp
 <<
 
-CMakeFiles\snow.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/main.cpp.i"
-	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\main.cpp
+CMakeFiles\snow.dir\src\main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/main.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\main.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\main.cpp
 <<
 
-CMakeFiles\snow.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/main.cpp.s"
+CMakeFiles\snow.dir\src\main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/main.cpp.s"
 	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\main.cpp.s /c C:\Users\Tudor\projects\snow\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\main.cpp.s /c C:\Users\Tudor\projects\snow\src\main.cpp
+<<
+
+CMakeFiles\snow.dir\src\infrastructure\World.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\infrastructure\World.cpp.obj: ..\src\infrastructure\World.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/snow.dir/src/infrastructure/World.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\infrastructure\World.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\infrastructure\World.cpp
+<<
+
+CMakeFiles\snow.dir\src\infrastructure\World.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/infrastructure/World.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\infrastructure\World.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\infrastructure\World.cpp
+<<
+
+CMakeFiles\snow.dir\src\infrastructure\World.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/infrastructure/World.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\infrastructure\World.cpp.s /c C:\Users\Tudor\projects\snow\src\infrastructure\World.cpp
+<<
+
+CMakeFiles\snow.dir\src\lua\Lua.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\lua\Lua.cpp.obj: ..\src\lua\Lua.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/snow.dir/src/lua/Lua.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\lua\Lua.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\lua\Lua.cpp
+<<
+
+CMakeFiles\snow.dir\src\lua\Lua.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/lua/Lua.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\lua\Lua.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\lua\Lua.cpp
+<<
+
+CMakeFiles\snow.dir\src\lua\Lua.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/lua/Lua.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\lua\Lua.cpp.s /c C:\Users\Tudor\projects\snow\src\lua\Lua.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.obj: ..\src\resources\ResourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/snow.dir/src/resources/ResourceManager.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\resources\ResourceManager.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\resources\ResourceManager.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/resources/ResourceManager.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\resources\ResourceManager.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/resources/ResourceManager.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\resources\ResourceManager.cpp.s /c C:\Users\Tudor\projects\snow\src\resources\ResourceManager.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\Texture.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\resources\Texture.cpp.obj: ..\src\resources\Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/snow.dir/src/resources/Texture.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\resources\Texture.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\resources\Texture.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/resources/Texture.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\resources\Texture.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\resources\Texture.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/resources/Texture.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\resources\Texture.cpp.s /c C:\Users\Tudor\projects\snow\src\resources\Texture.cpp
+<<
+
+CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.obj: ..\src\infrastructure\Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/snow.dir/src/infrastructure/Renderer.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\infrastructure\Renderer.cpp
+<<
+
+CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/infrastructure/Renderer.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\infrastructure\Renderer.cpp
+<<
+
+CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/infrastructure/Renderer.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.s /c C:\Users\Tudor\projects\snow\src\infrastructure\Renderer.cpp
+<<
+
+CMakeFiles\snow.dir\src\ecs\Entity.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\ecs\Entity.cpp.obj: ..\src\ecs\Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/snow.dir/src/ecs/Entity.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\ecs\Entity.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\ecs\Entity.cpp
+<<
+
+CMakeFiles\snow.dir\src\ecs\Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/ecs/Entity.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\ecs\Entity.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\ecs\Entity.cpp
+<<
+
+CMakeFiles\snow.dir\src\ecs\Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/ecs/Entity.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\ecs\Entity.cpp.s /c C:\Users\Tudor\projects\snow\src\ecs\Entity.cpp
+<<
+
+CMakeFiles\snow.dir\src\ecs\Component.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\ecs\Component.cpp.obj: ..\src\ecs\Component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/snow.dir/src/ecs/Component.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\ecs\Component.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\ecs\Component.cpp
+<<
+
+CMakeFiles\snow.dir\src\ecs\Component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/ecs/Component.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\ecs\Component.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\ecs\Component.cpp
+<<
+
+CMakeFiles\snow.dir\src\ecs\Component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/ecs/Component.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\ecs\Component.cpp.s /c C:\Users\Tudor\projects\snow\src\ecs\Component.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\Preferences.cpp.obj: CMakeFiles\snow.dir\flags.make
+CMakeFiles\snow.dir\src\resources\Preferences.cpp.obj: ..\src\resources\Preferences.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/snow.dir/src/resources/Preferences.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\snow.dir\src\resources\Preferences.cpp.obj /FdCMakeFiles\snow.dir\ /FS -c C:\Users\Tudor\projects\snow\src\resources\Preferences.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\Preferences.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow.dir/src/resources/Preferences.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\snow.dir\src\resources\Preferences.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tudor\projects\snow\src\resources\Preferences.cpp
+<<
+
+CMakeFiles\snow.dir\src\resources\Preferences.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow.dir/src/resources/Preferences.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\snow.dir\src\resources\Preferences.cpp.s /c C:\Users\Tudor\projects\snow\src\resources\Preferences.cpp
 <<
 
 # Object files for target snow
 snow_OBJECTS = \
-"CMakeFiles\snow.dir\main.cpp.obj"
+"CMakeFiles\snow.dir\src\main.cpp.obj" \
+"CMakeFiles\snow.dir\src\infrastructure\World.cpp.obj" \
+"CMakeFiles\snow.dir\src\lua\Lua.cpp.obj" \
+"CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.obj" \
+"CMakeFiles\snow.dir\src\resources\Texture.cpp.obj" \
+"CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.obj" \
+"CMakeFiles\snow.dir\src\ecs\Entity.cpp.obj" \
+"CMakeFiles\snow.dir\src\ecs\Component.cpp.obj" \
+"CMakeFiles\snow.dir\src\resources\Preferences.cpp.obj"
 
 # External object files for target snow
 snow_EXTERNAL_OBJECTS =
 
-snow.exe: CMakeFiles\snow.dir\main.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\main.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\infrastructure\World.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\lua\Lua.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\resources\ResourceManager.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\resources\Texture.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\infrastructure\Renderer.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\ecs\Entity.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\ecs\Component.cpp.obj
+snow.exe: CMakeFiles\snow.dir\src\resources\Preferences.cpp.obj
 snow.exe: CMakeFiles\snow.dir\build.make
+snow.exe: lua.lib
 snow.exe: CMakeFiles\snow.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable snow.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Tudor\projects\snow\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable snow.exe"
 	C:\Users\Tudor\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.7223.86\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\snow.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100162~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100162~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\snow.dir\objects1.rsp @<<
- /out:snow.exe /implib:snow.lib /pdb:C:\Users\Tudor\projects\snow\cmake-build-debug\snow.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:snow.exe /implib:snow.lib /pdb:C:\Users\Tudor\projects\snow\cmake-build-debug\snow.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console   -LIBPATH:C:\Users\Tudor\projects\snow\deps\sdl\lib\x86  -LIBPATH:C:\Users\Tudor\projects\snow\deps\sdl_image\lib\x86  SDL2main.lib SDL2.lib SDL2_image.lib lua.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.

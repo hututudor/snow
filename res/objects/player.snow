@@ -1,0 +1,7 @@
+components = { 'transform' }
+
+transform = {
+  position = { 50, 50, 50 },
+  size = { 100, 200 },
+  rotation = 20
+}
